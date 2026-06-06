@@ -36,81 +36,144 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
-      <div class="hero-section">
-        <div class="hero-content">
-          <h1>Our Products</h1>
-          <p>
-            Discover gentle, effective products for a healthy and radiant glow.
-          </p>
-        </div>
-      </div>
-
-<!-- FILTER OPTION -->
-<div class="top-bar">
-  <div class="filter-container">
-    <h2>Filters</h2>
-    <!-- CATEGORY FILTER -->
-    <div class="filter-group">
-      <h3>Categories</h3>
-      <label>
-        <input type="checkbox" name="category" value="cleanser">
-        Cleanser
-      </label>
-
-      <label>
-        <input type="checkbox" name="category" value="serum">
-        Serum
-      </label>
-
-      <label>
-        <input type="checkbox" name="category" value="moisturizer">
-        Moisturizer
-      </label>
-
-      <label>
-        <input type="checkbox" name="category" value="toner">
-        Toner
-      </label>
-
-      <label>
-        <input type="checkbox" name="category" value="sunscreen">
-        Sunscreen
-      </label>
-    </div>
-
-    <!-- SKIN TYPE FILTER -->
-    <div class="filter-group">
-      <h3>Skin Type</h3>
-
-      <label>
-        <input type="checkbox" name="skin-type" value="dry">
-        Dry
-      </label>
-
-      <label>
-        <input type="checkbox" name="skin-type" value="oily">
-        Oily
-      </label>
-
-      <label>
-        <input type="checkbox" name="skin-type" value="combination">
-        Combination
-      </label>
-
-      <label>
-        <input type="checkbox" name="skin-type" value="sensitive">
-        Sensitive
-      </label>
+     <main>
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Our Products</h1>
+      <p>
+        Discover gentle, effective products for a healthy and radiant glow.
+      </p>
     </div>
   </div>
-        <!-- SEARCH SECTION -->
-        <div class="search-option">
-          <img src="../Images/Product/3255265-200.png" alt="search" />
-          <input type="text" id="search-bar" placeholder="Search products..." />
-        </div>
+
+  <div class="top-bar">
+
+    <!-- FILTER -->
+    <div class="filter-container">
+      <h2>Filters</h2>
+
+      <div class="filter-group">
+        <h3>Categories</h3>
+
+        <label><input class="category" type="checkbox" value="cleanser"> Cleanser</label>
+        <label><input class="category" type="checkbox" value="serum"> Serum</label>
+        <label><input class="category" type="checkbox" value="moisturizer"> Moisturizer</label>
+        <label><input class="category" type="checkbox" value="toner"> Toner</label>
+        <label><input class="category" type="checkbox" value="sunscreen"> Sunscreen</label>
       </div>
 
-    </main>
+      <div class="filter-group">
+        <h3>Brand</h3>
+
+        <label><input type="checkbox" class="brand" value="anua"> Anua</label>
+        <label><input type="checkbox" class="brand" value="cosrx">Cosrx</label>
+        <label><input type="checkbox" class="brand" value="drJart"> Dr. Jart+</label>
+        <label><input type="checkbox" class="brand" value="laneige"> Laneige</label>
+        <label><input type="checkbox" class="brand" value="medicube"> Medicube</label>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="product-section">
+
+      <!-- SEARCH -->
+      <div class="search-option">
+        <img
+          src="../Images/Product/3255265-200.png"
+          alt="search"
+        />
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search products..."
+        />
+      </div>
+
+      <!-- PRODUCTS -->
+      <div class="card_container">
+
+        <div class="card" data-category="serum" data-brand="anua">
+          <img src="../Images/Product/Serum.jpg" alt="">
+          <h3>Anua Niacinamide</h3>
+          <p>Brightens skin and helps minimize the appearance of pores.</p>
+          <p><b>NPR 1800</b></p>
+          <button class="card_btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="toner" data-brand="drJart">
+          <img src="../Images/Product/toner.webp" alt="">
+          <h3>Cicapair Toner</h3>
+          <p>Brightens skin and helps minimize the appearance of pores.</p>
+          <p><b>NPR 2000</b></p>
+          <button class="card_btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="moisturizer" data-brand="medicube">
+          <img src="../Images/Product/moisturizer.webp" alt="">
+          <h3>Medicube Moisturizer</h3>
+          <p>Brightens skin and helps minimize the appearance of pores.</p>
+          <p><b>NPR 1200</b></p>
+          <button class="card_btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="cleanser" data-brand="anua">
+          <img src="../Images/Product/cleanser.avif" alt="">
+          <h3>Anua Cleanser</h3>
+          <p>Brightens skin and helps minimize the appearance of pores.</p>
+          <p><b>NPR 800</b></p>
+          <button class="card_btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="sunscreen" data-brand="cosrx">
+          <img src="../Images/Product/sunscreen.jpg" alt="">
+          <h3>Anua Niacinamide</h3>
+          <p>Brightens skin and helps minimize the appearance of pores.</p>
+          <p><b>NPR 800</b></p>
+          <button class="card_btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-brand="laneige">
+          <img src="../Images/Product/lipbalm.webp" alt="">
+          <h3>Laneige Lip Balm</h3>
+          <p>Brightens skin and helps minimize the appearance of pores.</p>
+          <p><b>NPR 800</b></p>
+          <button class="card_btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+   <!-- FOOTER -->
+    <footer class="footer_container">
+      <div class="footer_content">
+        <img src="../Images/Home/SSKIN.png" alt="logo" />
+        <p>
+          SSKIN, established in 2026, is dedicated to simple and effective
+          skincare that brings out your natural glow.
+        </p>
+      </div>
+      <div class="list_content">
+        <ul>
+          <li><a href="index.html">Product</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="index.html">Contact Us</a></li>
+        </ul>
+        <div class="social_media">
+          <a href="https://www.instagram.com/seemran_bist/"
+            ><img src="../Images/Home/instagram.png"
+          /></a>
+          <a href="https://www.facebook.com/seemran.bist.224301"
+            ><img src="../Images/Home/facebook_logo.png"
+          /></a>
+          <a href="https://www.pinterest.com/seemranbist05/"
+            ><img src="../Images/Home/pinterest.png"
+          /></a>
+        </div>
+      </div>
+      <p>All rights reserved © 2026 SSKIN</p>
+    </footer>
+
+    <script src="../JS/product.js"></script>
   </body>
 </html>
