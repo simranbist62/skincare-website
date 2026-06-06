@@ -31,4 +31,5 @@ const validate = () => {
     message.style.display = "none";
   }, 2000);
 };
+
 subscribe_btn.addEventListener("click", validate);

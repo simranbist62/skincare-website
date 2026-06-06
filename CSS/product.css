@@ -154,32 +154,6 @@ body {
   flex: 1;
 }
 
-/* SEARCH BAR */
-.search-option {
-  position: relative;
-  width: 450px;
-  margin-bottom: 35px;
-}
-
-.search-option img {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#search-bar {
-  width: 100%;
-  padding: 14px 20px 14px 50px;
-  border-radius: 50px;
-  border: 1px solid #d8cfc0;
-  font-size: 16px;
-  background: white;
-  outline: none;
-}
-
 /* PRODUCT GRID */
 .card_container {
   display: flex;

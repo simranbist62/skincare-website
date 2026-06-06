@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f3eb;
+  color: #433636;
+}
+
+/* NAVBAR */
+.navbar-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: #efe7d9;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Logo */
+.logo {
+  height: 100px;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Nav links */
+.navbar-container ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar-container ul li a {
+  text-decoration: none;
+  color: #433636;
+}
+
+/* Cart */
+.cart {
+  height: 50px;
+  width: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #efe7d9;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_content img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.footer_content p {
+  width: 300px;
+  text-align: center;
+  color: #7a6b65;
+}
+
+.list_content ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.list_content ul li a {
+  text-decoration: none;
+  color: #433636;
+}
+
+.social_media {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.social_media img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+/* Product Detail */
+main {
+  padding: 3rem 2rem;
+}
+
+.product-desc {
+  display: flex;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* Image */
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: 450px;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Description */
+.description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description h3 {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #9e8070;
+  font-weight: 500;
+}
+
+.description h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #2f2020;
+}
+
+/* Price */
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #433636;
+}
+
+.old-price {
+  font-size: 24px;
+  color: #b09b8a;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+
+.discount {
+  font-size: 14px;
+  background: #e8d9c8;
+  color: #7a5c48;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* Description text */
+.description p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #6e5a54;
+}
+
+/* Tags */
+.attributes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.attributes span {
+  font-size: 14px;
+  border: 1px solid #c9b8ab;
+  color: #7a6258;
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+/* Cart controls */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #c9b8ab;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.quantity button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #433636;
+}
+
+.quantity span {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 20px;
+  text-align: center;
+}
+
+.add-btn {
+  border-radius: 20px;
+  background-color: #d9a5a5;
+  color: white;
+  border: none;
+  padding: 12px 48px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+ background-color: #c98f8f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-desc {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .description h1 {
+    font-size: 1.3rem;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .list_content ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

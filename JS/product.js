@@ -1,3 +1,4 @@
+//For filter option
 const categories = document.querySelectorAll(".category");
 const products = document.querySelectorAll(".card");
 const brands=document.querySelectorAll(".brand");
@@ -45,4 +46,15 @@ products.forEach((product) => {
         product.style.display="none";
     }
 });
+}
+
+
+//For search option
+const search = document.querySelector("#search-icon");
+const input = document.querySelector("#search-bar");
+
+search.addEventListener("click", searchProducts);
+
+function searchProducts(){
+    return "Hi";
 }
