@@ -48,13 +48,15 @@ products.forEach((product) => {
 });
 }
 
+//For adding product to cart
+const card_btns = document.querySelectorAll(".card_btn");
 
-//For search option
-const search = document.querySelector("#search-icon");
-const input = document.querySelector("#search-bar");
 
-search.addEventListener("click", searchProducts);
+card_btns.forEach((card_btn)=>{
+    card_btn.addEventListener("click", addProduct);
+    // localStorage.setItem("cart_item");
+}) 
 
-function searchProducts(){
-    return "Hi";
+function addProduct(){
+    console.log("hi");
 }

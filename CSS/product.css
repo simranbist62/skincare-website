@@ -163,7 +163,7 @@ body {
 
 /* CARD */
 .card {
- background-color: #fffdf9;
+  background-color: #fffdf9;
   width: 300px;
   text-align: center;
   border-radius: 20px;
@@ -316,7 +316,7 @@ body {
     font-size: 18px;
   }
 
-   .top-bar {
+  .top-bar {
     flex-direction: column;
   }
 
@@ -331,7 +331,7 @@ body {
   .card_container {
     justify-content: center;
   }
-    .footer_container {
+  .footer_container {
     flex-direction: column;
     gap: 30px;
     text-align: center;
