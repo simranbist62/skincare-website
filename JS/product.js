@@ -50,4 +50,22 @@ function filterProducts() {
   });
 }
 
+//For adding product to cart
+const card_btns = document.querySelectorAll(".card_btn");
 
+card_btns.forEach((card_btn) => {
+  card_btn.addEventListener("click", addProduct);
+});
+
+function addProduct(event){
+    const card=event.target.closest(".product-card");
+
+    const product = {
+        img: card.querySelector("img").src,
+        name: card.querySelector(".title").textContent,
+        description: card.querySelector(".description").textContent,
+        price: card.querySelector(".price").textContent
+
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
