@@ -1,13 +1,3 @@
-const cartFunction = () => {
-  alert("Product added to cart!");
-};
-
-const buttons = document.querySelectorAll(".card_btn");
-
-buttons.forEach((button) => {
-  button.addEventListener("click", cartFunction);
-});
-
 const subscribe_btn = document.querySelector(".subscribe-btn");
 const input = document.querySelector("#email");
 const message = document.querySelector("#message");
@@ -33,3 +23,6 @@ const validate = () => {
 };
 
 subscribe_btn.addEventListener("click", validate);
+
+
+

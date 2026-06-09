@@ -50,6 +50,7 @@ function filterProducts() {
   });
 }
 
+//Add to Cart Functionality
 // to access elements
 const card_btns = document.querySelectorAll(".card_btn");
 

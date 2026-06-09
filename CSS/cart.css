@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f3eb;
+  color: #433636;
+}
+
+/* NAVBAR */
+.navbar-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: #efe7d9;
+  flex-wrap: nowrap; 
+  gap: 20px;
+}
+
+/* Logo */
+.logo {
+  height: 100px;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Nav links */
+.navbar-container ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.navbar-container ul li a {
+  text-decoration: none;
+  color: #433636;
+}
+
+/* Cart */
+.cart {
+  height: 50px;
+  width: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+
+/* FOOTER */
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #efe7d9;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_content img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.footer_content p {
+  width: 300px;
+  text-align: center;
+  color: #7a6b65;
+}
+
+.list_content ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.list_content ul li a {
+  text-decoration: none;
+  color: #433636;
+}
+
+.social_media {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.social_media img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+
+/* Main content */
+/* CART PAGE CONTAINER */
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* each product card in cart */
+.cartContainer div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cartContainer img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cartContainer h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.cartContainer p {
+  font-size: 16px;
+  color: #7a6b65;
+}
+
+.cartContainer div:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .navbar-container ul {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .cart {
+    order: 2;
+  }
+
+  .image_container img {
+    height: 400px;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .list_content ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
