@@ -1,32 +1,47 @@
-//Add to Cart Functionality
-// to access elements
-const card_btns = document.querySelectorAll(".card_btn");
+const addButton = document.querySelector(".card_btn");
+addButton.addEventListener("click", addToCart);
 
-card_btns.forEach((card_btn)=> {
-  card_btn.addEventListener("click", addProduct);
-});
+function addToCart() {
 
-//to fetch each product's detail and stored it in object
-function addProduct(event){
-  const card = event.target.closest(".product-card"); // to get the product card that contains the button clicked
-
-  //store it in object
   const product = {
-    img: card.querySelector("img").src,
-    name: card.querySelector(".title").textContent,
-    description: card.querySelector(".description").textContent,
-    price: card.querySelector(".price").textContent
+    img: document.querySelector(".product-image img").src,
+    name: document.querySelector(".title").textContent,
+    description: document.querySelector(".description").textContent,
+    price: document.querySelector(".price").textContent
   };
 
-  //get the existing cart from localStorage or create an empty cart
-  let cart = JSON.parse(localStorage.getItem("cart")) || []; //convert it back to object while reading
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  //add new product in cart
-  cart.push(product);
+  // check if already exists
+  const exists = cart.some(item => item.name === product.name);
 
-  //save it to the localStorage
-  localStorage.setItem("cart", JSON.stringify(cart)); //convert arrays/objects to string while saving
-
-  //display message
-  alert("Added to Cart!");
+  if (!exists) {
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Added to Cart!");
+  } else {
+    alert("Already in cart!");
+  }
 }
+
+//Increase and decrease quantity
+const increaseBtn = document.querySelector(".increase-qty");
+const quantity = document.querySelector(".qty");
+const decreaseBtn = document.querySelector(".decrease-qty");
+
+//to increase quantity
+increaseBtn.addEventListener("click",() => {
+  let currentValue = parseInt(quantity.textContent);
+  quantity.textContent = currentValue+1;
+});
+
+//to decrease quantity
+decreaseBtn.addEventListener("click", () => {
+  let currentValue = parseInt(quantity.textContent) ;
+  if (currentValue>0){
+    quantity.textContent = currentValue-1;
+  }
+  else{
+   quantity.textContent= 0;
+  }
+})

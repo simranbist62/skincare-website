@@ -140,25 +140,25 @@ body {
   align-items: center;
   gap: 20px;
   background-color: #fff;
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .cartContainer img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .cartContainer h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
 .cartContainer p {
-  font-size: 16px;
+  font-size: 14px;
   color: #7a6b65;
 }
 
