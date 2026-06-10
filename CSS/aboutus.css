@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f3eb;
+  color: #433636;
+}
+
+/* NAVBAR */
+.navbar-container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  background-color: #efe7d9;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+/* Logo */
+.logo {
+  height: 100px;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Nav links */
+.navbar-container ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar-container ul li a {
+  text-decoration: none;
+  color: #433636;
+}
+
+/* Cart */
+.cart {
+  height: 50px;
+  width: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #efe7d9;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_content img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.footer_content p {
+  width: 300px;
+  text-align: center;
+  color: #7a6b65;
+}
+
+.list_content ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.list_content ul li a {
+  text-decoration: none;
+  color: #433636;
+}
+
+.social_media {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.social_media img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+
+/*MAIN*/
+
+main {
+  background-color: #f9f3eb;
+}
+
+/*HERO SECTION*/
+
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.hero-text h1 {
+  font-size: 54px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: #9d7760;
+}
+
+.aboutUs {
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #8f7c72;
+}
+
+.hero-desc {
+  max-width: 500px;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 15px 28px;
+  border: 1px solid #433636;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/*STORY SECTION*/
+
+.story-section {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 80px;
+}
+
+.story-img-wrap {
+  flex: 1;
+  position: relative;
+}
+
+.story-img-wrap img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.clean-badge {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.story-text h2 {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.story-desc {
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+/*ICONS*/
+
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.icon-item {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #efe7d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+/*TABLET*/
+
+@media (max-width: 1024px) {
+  .hero-section,
+  .story-section,
+  .mission-section {
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-text h1,
+  .story-text h2,
+  .mission-text h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero-desc,
+  .story-desc {
+    margin: auto;
+  }
+
+  .icon-row {
+    justify-content: center;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero-text h1,
+  .story-text h2,
+  .mission-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image img,
+  .story-img-wrap img,
+  .mission-img img {
+    height: 450px;
+  }
+
+  .clean-badge {
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
