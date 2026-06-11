@@ -74,19 +74,20 @@
 
     <!-- Right -->
     <div class="form-container">
-      <form>
-        <input type="text" placeholder="Your Name" required>
+      <form id="myForm">
+        <input type="text" class="name" placeholder="Your Name" required>
 
-        <input type="email" placeholder="Email Address" required>
+        <input type="email" class="email" placeholder="Email Address" required>
 
-        <input type="text" placeholder="Subject">
+        <input type="text" class="subject" placeholder="Subject">
 
         <textarea
+        class="message"
           rows="6"
           placeholder="Write your message..."
         ></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="form-btn">Send Message</button>
       </form>
     </div>
 
