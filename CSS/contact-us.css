@@ -6,7 +6,6 @@
 
 body {
   background-color: #f9f3eb;
-  font-family: "Open Sans", sans-serif;
 }
 
 /* NAVBAR */
@@ -14,6 +13,7 @@ body {
   height: 100px;
   display: flex;
   justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
   align-items: center;
   padding: 0 20px;
   position: sticky;
@@ -123,6 +123,7 @@ body {
 /* MAIN SECTION */
 .main-container {
   max-width: 1300px;
+  font-family: "Open Sans", sans-serif;
   margin: 60px auto;
   padding: 0 40px;
   display: flex;
