@@ -35,6 +35,8 @@ This project includes product filtering and a fully interactive shopping cart sy
 <img width="2628" height="3297" alt="Screenshot_8-6-2026_114456_127 0 0 1" src="https://github.com/user-attachments/assets/cd16687d-1a99-4faa-b16a-2a4870a1c61e" />
 <img width="2628" height="1653" alt="Screenshot_8-6-2026_114536_127 0 0 1" src="https://github.com/user-attachments/assets/d15b6247-9d25-4f0d-aa87-ae559fd0d107" />
 <img width="2848" height="1466" alt="image" src="https://github.com/user-attachments/assets/e3862adf-836a-4416-bacd-7d82e883a912" />
+<img width="2628" height="3845" alt="Screenshot_11-6-2026_95825_127 0 0 1" src="https://github.com/user-attachments/assets/114db193-ce1f-46e6-adb7-08eb4926922a" />
+<img width="2628" height="2218" alt="Screenshot_11-6-2026_95851_127 0 0 1" src="https://github.com/user-attachments/assets/0887bfc3-a456-4233-b695-69b1980fc5ab" />
 
 
 ---
